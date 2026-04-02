@@ -214,6 +214,38 @@ img {
   margin-bottom: 10px;
 }
 
+.hero-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.hero-contact-item {
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-contact-item span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-contact-item strong,
+.hero-contact-item a {
+  display: block;
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
 .hero-compact .hero-actions {
   margin-top: 16px;
 }
@@ -335,18 +367,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.portrait-info {
-  padding: 16px 8px 8px;
-}
-
-.portrait-role {
-  margin: 0 0 12px;
-  color: var(--warm);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.84rem;
 }
 
 .contact-list {
@@ -675,6 +695,10 @@ img {
   .hero-visual {
     min-height: auto;
     padding-top: 8px;
+  }
+
+  .hero-contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-highlights,
