@@ -1,0 +1,37 @@
+{
+    "editor.formatOnSave": true, // 在保存文件时自动格式化
+    "editor.formatOnType": true, // 控制编辑器是否应在键入后自动格式化代码
+    "editor.formatOnPaste": true, // 控制编辑器是否应自动格式化粘贴的内容。格式化程序必须可用，并且能针对文档语言格式化。
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "files.associations": {
+        "iostream": "cpp",
+        "stdio.h": "c",
+        "a": "c",
+        "b": "cpp",
+        "c": "c",
+        "cpp": "cpp",
+        "stack": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "memory": "cpp",
+        "queue": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "tuple": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xlocale": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "istream": "cpp"
+    },
+    //"editor.renderWhitespace": "all",// 控制编辑器是否应该在空白字符上显示符号
+}

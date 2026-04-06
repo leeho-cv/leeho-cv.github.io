@@ -1,0 +1,51 @@
+{
+	"New Enhanced C++ File": {
+		"prefix": "lncpp",
+		"scope": "cpp", // 指定代码片段的作用域为 C++ 文件
+		"body": [
+			"// Author: Leee_H",
+			"// Date: ${CURRENT_YEAR}-${CURRENT_MONTH}",
+			"",
+			"#include <iostream>",
+			"#include <cmath>",
+			"#include <cstdio>",
+			"#include <cstdlib>",
+			"#include <string>",
+			"#include <iomanip>",
+			"#include <cstring>",
+			"#include <algorithm>",
+			"",
+			"#include <list>",
+			"#include <map>",
+			"#include <queue>",
+			"#include <iterator>",
+			"#include <stack>",
+			"#include <vector>",
+			"#include <set>",
+			"#include <unordered_set>",
+			"#include <unordered_map>",
+			"",
+			"using namespace std;",
+			"",
+		],
+		"description": "New C++ file with enhanced features"
+	},
+	"New Enhanced C File": {
+		"prefix": "lnc",
+		"scope": "c", // 指定代码片段的作用域为 C 文件
+		"body": [
+			"// Author: Leee_H",
+			"// Date: ${CURRENT_YEAR}-${CURRENT_MONTH}",
+			"",
+			"#include <stdio.h>",
+			"#include <stdlib.h>",
+			"#include <math.h>",
+			"#include <string.h>",
+			"#include <malloc.h>",
+			"#include<stdbool.h>",
+			"#include<Windows.h>",
+			"",
+		],
+		"description": "New C file with enhanced features"
+	}
+}
