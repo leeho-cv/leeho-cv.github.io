@@ -169,41 +169,31 @@
             </div>
             <h3>Emotion Recognition Research Based on Reinforcement Learning and Chain-of-Thought Optimization</h3>
             <p>
-              To address hallucinated reasoning and unstable logic when audio is missing, I proposed a GRPO-based
-              reinforcement learning training framework,
-              explicitly segmenting episode-level reasoning chains and jointly designing acoustic and semantic scoring
-              models to build a semantic reward mechanism.
+              To address hallucinated reasoning caused by incomplete cross-modal information when the strong baseline
+              VideoAuto-R1 faces missing audio at test time in multimodal video emotion recognition, I proposed a
+              GRPO-based reinforcement-learning optimization framework.
             </p>
             <ul class="feature-list">
-              <li>Explicitly distinguished and rewarded or penalized visual speculation versus unsupported hallucination
-                to achieve cross-modal semantic calibration</li>
-              <li>Introduced perturbations and hidden-state stability rewards to form a token-level integrated reward
-                allocation strategy</li>
-              <li>Provided positive feedback when reasoning logic was correct even if the final result was wrong,
-                improving model generalization</li>
+              <li>Designed an episode-level reasoning-chain structure to explicitly segment the thinking process, and trained acoustic and semantic scoring models to build a semantic reward mechanism that distinguishes and rewards or penalizes visual speculation versus unsupported hallucination</li>
+              <li>Introduced perturbations and computed hidden-state stability rewards, integrating them into a token-level comprehensive reward allocation strategy</li>
+              <li>Reduced over-reliance on the final target during training and provided positive feedback when the final answer was wrong but the reasoning logic was correct, effectively improving model generalization</li>
             </ul>
           </article>
 
           <article class="card timeline-item" data-reveal>
             <div class="timeline-meta">
-              <span>Apr 2025 - Present</span>
+              <span>Mar 2025 - Present</span>
               <span>Provincial Student Innovation Project</span>
             </div>
             <h3>Zero-shot Learning for Multi-label Software Vulnerability Detection</h3>
             <p>
-              As the primary project lead, I conducted research on generalized zero-shot learning methods for
-              unseen-class recognition in multi-label vulnerability detection.
-              Built on shared semantic-space representation learning, the project constructs an integrated framework
-              combining code semantic modeling, label semantic learning,
-              and interpretability analysis.
+              As the primary project lead, I built a unified representation framework that combines code semantic
+              modeling with label semantic alignment to address class imbalance in multi-label vulnerability detection.
             </p>
             <ul class="feature-list">
-              <li>Designed an inference-stage calibration mechanism for the GZSL setting, improving multi-label
-                detection through bias correction and per-class threshold optimization</li>
-              <li>Introduced a ranking-loss strategy to improve joint detection performance across both seen and unseen
-                classes</li>
-              <li>Combined attention-weight analysis with occlusion analysis for interpretability, supporting prediction
-                rationale analysis and subsequent method extension</li>
+              <li>To improve discrimination on long-tail classes in multi-label detection, I introduced ranking loss together with bias correction and per-class threshold optimization</li>
+              <li>On seen classes, compared with the LineVul baseline, the method achieved relative improvements of 2.1% in Micro-F1 and 4.6% in Macro-F1, while reducing Hamming Loss by 7.2%</li>
+              <li>For unseen vulnerability types, I introduced a label semantic alignment mechanism and an inference-stage calibration strategy; compared with the baseline bottleneck on unseen classes (Macro-F1 of only 0.03), the model reached a Macro-F1 of 0.32 and an accuracy of 0.42</li>
             </ul>
           </article>
         </div>
@@ -219,34 +209,30 @@
             <span>Mar 2025 - Aug 2025</span>
             <span>Primary Project Lead</span>
           </div>
-          <h3>Connect6 Robot Based on MCTS and ResNet</h3>
+          <h3>Connect6 Game System Based on an Attention-Enhanced Policy-Value Residual Network (Attention-ResNet)</h3>
           <p class="supporting-text">
-            I led the development of a Connect6 game AI system and ultimately won National First Prize in the 2025
-            Chinese Collegiate Computer Game Competition.
-            The project covered the full chain of solution iteration, team collaboration, rule modeling, search
-            optimization, and deep-model deployment.
+            As the primary project lead, I led the development of a Connect6 game system, first advancing through
+            campus selection with Monte Carlo Tree Search (MCTS), and then upgrading the architecture for the national
+            finals into a game-decision system built on a deep residual network (ResNet).
           </p>
           <div class="project-highlights">
             <div>
-              <span>Campus Selection Stage</span>
-              <strong>Advanced initially with an MCTS-centered system</strong>
+              <span>Network Design</span>
+              <strong>34×128 deep residual network with spatial and coordinate attention</strong>
             </div>
             <div>
-              <span>National Finals Stage</span>
-              <strong>Upgraded to a ResNet-based game decision system</strong>
+              <span>Rule Modeling</span>
+              <strong>Legality constraints based on priority distance and key-move feature recognition</strong>
             </div>
             <div>
-              <span>Key Optimization</span>
-              <strong>Introduced priority-distance pruning and key-path recognition</strong>
+              <span>Model Performance</span>
+              <strong>73.42% Top-1 / 91.49% Top-5 / 0.221 Value MSE</strong>
             </div>
           </div>
           <ul class="feature-list">
-            <li>Addressed the special double-stone rule in Connect6 and alleviated search-time explosion under complex
-              rules</li>
-            <li>Improved board-evaluation accuracy and search efficiency, making the system better suited for
-              finals-level competition</li>
-            <li>Coordinated algorithm upgrades and project execution, turning research ideas into a competition-winning
-              system</li>
+            <li>The input uses multi-channel board representations, while the backbone employs a 34×128 deep residual network to extract spatial features and combines spatial and coordinate attention for fine-grained modeling of critical regions</li>
+            <li>The output includes both a policy head and a value head for predicting the next-move distribution and the winning trend of the current board; for the special double-stone rule in Connect6, I introduced legality constraints and key-move recognition modules to significantly reduce search explosion under complex rules</li>
+            <li>The final model achieved 73.42% policy top-1, 91.49% policy top-5, and a value MSE of 0.221 on the validation set, ranked first with an 86.2% win rate in the Jilin University Connect6 ranking tournament, and won National First Prize in the 2025 Chinese Collegiate Computer Game Competition</li>
           </ul>
         </article>
       </section>
