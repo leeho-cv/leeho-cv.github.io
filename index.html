@@ -158,6 +158,44 @@
         </div>
       </section>
 
+      <section class="section" id="project">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">Project</p>
+          <h2>优秀的项目实践和极强的工程能力</h2>
+        </div>
+        <article class="card project-card" data-reveal>
+          <div class="card-topline">
+            <span>2025.03 - 2025.08</span>
+            <span>项目第一负责人</span>
+          </div>
+          <h3>基于注意力增强型策略-价值残差网络（Attention-ResNet）的六子棋博弈系统</h3>
+          <p class="supporting-text">
+            作为项目第一负责人，带队研发六子棋博弈系统，校级选拔阶段以蒙特卡洛树搜索（MCTS）为核心机制完成初步突围，
+            并在全国决赛阶段升级架构，设计了基于深度残差网络（ResNet）的博弈决策系统。
+          </p>
+          <div class="project-highlights">
+            <div>
+              <span>网络结构</span>
+              <strong>34×128 深度残差网络结合空间与坐标注意力机制</strong>
+            </div>
+            <div>
+              <span>规则建模</span>
+              <strong>优先级距离合法性约束与关键落子特征识别模块</strong>
+            </div>
+            <div>
+              <span>模型效果</span>
+              <strong>73.42% Top-1 / 91.49% Top-5 / 0.221 Value MSE</strong>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li>输入端采用多通道棋盘表征，主干网络使用 34×128 深度残差网络提取空间特征，并结合空间与坐标注意力机制实现关键区域精细化建模</li>
+            <li>输出端构建策略头与价值头，分别用于预测下一落点分布与当前局面的胜负趋势；针对“落双子”规则引入合法性约束与关键落子识别模块，显著缓解复杂规则下的搜索时间爆炸问题</li>
+            <li>最终训练出的模型在验证集上取得 73.42% 的 policy top-1、91.49% 的 policy top-5 和 0.221 的 value MSE，在吉林大学六子棋积分赛中胜率 86.2% 位列第一，并获 2025 年中国大学生计算机博弈大赛全国一等奖</li>
+          </ul>
+        </article>
+      </section>
+
+
       <section class="section" id="research">
         <div class="section-heading" data-reveal>
           <p class="section-kicker">Research</p>
@@ -199,47 +237,10 @@
         </div>
       </section>
 
-      <section class="section" id="project">
-        <div class="section-heading" data-reveal>
-          <p class="section-kicker">Project</p>
-          <h2>优秀的项目实践和极强的工程能力</h2>
-        </div>
-        <article class="card project-card" data-reveal>
-          <div class="card-topline">
-            <span>2025.03 - 2025.08</span>
-            <span>项目第一负责人</span>
-          </div>
-          <h3>基于注意力增强型策略-价值残差网络（Attention-ResNet）的六子棋博弈系统</h3>
-          <p class="supporting-text">
-            作为项目第一负责人，带队研发六子棋博弈系统，校级选拔阶段以蒙特卡洛树搜索（MCTS）为核心机制完成初步突围，
-            并在全国决赛阶段升级架构，设计了基于深度残差网络（ResNet）的博弈决策系统。
-          </p>
-          <div class="project-highlights">
-            <div>
-              <span>网络结构</span>
-              <strong>34×128 深度残差网络结合空间与坐标注意力机制</strong>
-            </div>
-            <div>
-              <span>规则建模</span>
-              <strong>优先级距离合法性约束与关键落子特征识别模块</strong>
-            </div>
-            <div>
-              <span>模型效果</span>
-              <strong>73.42% Top-1 / 91.49% Top-5 / 0.221 Value MSE</strong>
-            </div>
-          </div>
-          <ul class="feature-list">
-            <li>输入端采用多通道棋盘表征，主干网络使用 34×128 深度残差网络提取空间特征，并结合空间与坐标注意力机制实现关键区域精细化建模</li>
-            <li>输出端构建策略头与价值头，分别用于预测下一落点分布与当前局面的胜负趋势；针对“落双子”规则引入合法性约束与关键落子识别模块，显著缓解复杂规则下的搜索时间爆炸问题</li>
-            <li>最终训练出的模型在验证集上取得 73.42% 的 policy top-1、91.49% 的 policy top-5 和 0.221 的 value MSE，在吉林大学六子棋积分赛中胜率 86.2% 位列第一，并获 2025 年中国大学生计算机博弈大赛全国一等奖</li>
-          </ul>
-        </article>
-      </section>
-
       <section class="section" id="awards">
         <div class="section-heading" data-reveal>
           <p class="section-kicker">Awards</p>
-          <h2>奖项与认可</h2>
+          <h2>奖项</h2>
         </div>
         <div class="awards-grid">
           <article class="card award-card" data-reveal>
