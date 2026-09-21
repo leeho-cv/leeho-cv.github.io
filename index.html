@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="李皓简历网站">
+  <meta name="description" content="李皓个人简历：吉林大学计算机科学与技术专业，专业排名 8/346，GPA 3.84/4.0，已获浙江大学软件学院预录取。">
   <meta name="theme-color" content="#0d1b2a">
   <title>李皓 | 个人简历</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">吉林大学 · 计算机科学与技术 · 2023级</p>
           <h1>李皓</h1>
+          <p class="hero-summary">现已被<strong>浙江大学软件学院预录取</strong>。</p>
           <div class="hero-profile-card">
             <div class="hero-profile-grid">
               <div class="hero-profile-item">
@@ -47,7 +48,7 @@
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">学院</span>
-                <strong>计算机科学与技术</strong>
+                <strong>计算机科学与技术学院</strong>
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">专业</span>
@@ -59,11 +60,11 @@
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">政治面貌</span>
-                <strong>中共预备党员</strong>
+                <strong>中共党员</strong>
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">籍贯</span>
-                <strong>内蒙古呼伦贝尔</strong>
+                <strong>内蒙古自治区呼伦贝尔市</strong>
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">电话（微信同）</span>
@@ -81,8 +82,8 @@
           </div>
           <div class="metric-grid">
             <article class="metric-card">
-              <strong>11 / 345</strong>
-              <span>前五学期综合成绩位列专业前3.1%</span>
+              <strong>8 / 346</strong>
+              <span>全科专业排名前3%</span>
             </article>
             <article class="metric-card">
               <strong>国家奖学金</strong>
@@ -122,7 +123,10 @@
             </div>
             <h3>计算机科学与技术学院 · 计算机科学与技术专业</h3>
             <p class="supporting-text">
-              全科动态专业排名 <strong>11 / 345</strong>，处于专业前3.1%。
+              全科专业排名 <strong>8 / 346</strong>（前3%），绩点（GPA）<strong>3.84 / 4.0</strong>。
+            </p>
+            <p class="supporting-text">
+              未来学业规划：现已被<strong>浙江大学软件学院预录取</strong>。
             </p>
             <div class="course-grid">
               <span>机器学习 98</span>
@@ -132,6 +136,7 @@
               <span>微机系统与接口实验 96.8</span>
               <span>模拟与数字逻辑电路 96.6</span>
               <span>计算机网络 96.5</span>
+              <span>网络协议分析实验 96.4</span>
               <span>操作系统 95.8</span>
               <span>计算机科学导论 95.8</span>
               <span>硬件系统设计实验 95.5</span>
@@ -170,8 +175,8 @@
           </div>
           <h3>基于注意力增强型策略-价值残差网络（Attention-ResNet）的六子棋博弈系统</h3>
           <p class="supporting-text">
-            作为项目第一负责人，带队研发六子棋博弈系统，校级选拔阶段以蒙特卡洛树搜索（MCTS）为核心机制完成初步突围，
-            并在全国决赛阶段升级架构，设计了基于深度残差网络（ResNet）的博弈决策系统。
+            作为项目第一负责人，带队研发基于深度残差网络（ResNet）的六子棋博弈决策系统，
+            负责整体技术方案设计、模型架构设计与实验验证。
           </p>
           <div class="project-highlights">
             <div>
@@ -182,8 +187,9 @@
             </div>
           </div>
           <ul class="feature-list">
-            <li>输入端采用多通道棋盘表征，主干网络使用 34×128 深度残差网络提取空间特征，并结合空间与坐标注意力机制实现关键区域精细化建模</li>
-            <li>输出端构建策略头与价值头，分别用于预测下一落点分布与当前局面的胜负趋势；针对“落双子”规则引入合法性约束与关键落子识别模块，显著缓解复杂规则下的搜索时间爆炸问题</li>
+            <li>输入端采用多通道棋盘状态表征，对当前局面的落子信息及相关状态进行编码；主干网络采用 32、64、128 通道的残差模块逐步提取空间特征</li>
+            <li>结合空间与坐标注意力机制对关键区域进行精细化建模，在保持棋盘空间结构的同时，增强对局部棋型、连续威胁及高阶局面特征的表征能力</li>
+            <li>输出端构建策略头与价值头，分别用于预测下一落点分布与当前局面的胜负趋势</li>
             <li>最终训练出的模型在验证集上取得 73.42% 的 policy top-1、91.49% 的 policy top-5 和 0.221 的 value MSE，在吉林大学六子棋积分赛中胜率 86.2%
               位列第一，并获 2025 年中国大学生计算机博弈大赛全国一等奖</li>
           </ul>
@@ -199,18 +205,19 @@
         <div class="timeline">
           <article class="card timeline-item" data-reveal>
             <div class="timeline-meta">
-              <span>2026.01 - 至今</span>
+              <span>2026.04 - 至今</span>
               <span>吉林大学 AVC Lab 科研实习</span>
             </div>
             <h3>基于强化学习与思维链优化的情绪识别研究</h3>
             <p>
-              针对现有在多模态视频情绪识别任务中表现较优的 VideoAuto-R1 模型在测试阶段音频模态缺失时，
-              易因跨模态信息不完整而产生幻觉推理的问题，提出一种基于 GRPO 的强化学习优化框架。
+              针对多模态视频情绪识别模型 VideoAuto-R1 在测试阶段音频模态缺失时易产生无依据情绪推断的问题，
+              提出一种基于 GRPO 的多粒度奖励强化学习框架。
             </p>
             <ul class="feature-list">
-              <li>设计 Episode-level 推理链结构，将思维过程显式分段；训练声学和语义打分模型构建语义奖励机制，精准区分并奖惩“视觉推测”与“无依据幻觉”，实现跨模态语义校准</li>
-              <li>引入扰动并计算隐层稳定性奖励，融合为 Token-level 综合奖励分配策略</li>
+              <li>设计显式分段的 Episode-level 推理链，将推理过程分段组织</li>
+              <li>设计面向幻觉识别的语义校准奖励，对“无依据编造”“合理假设”与“视觉证据支撑的推断”进行差异化奖惩，增强跨模态缺失场景下的语义一致性</li>
               <li>通过在训练过程中弱化对最终目标的单一依赖，对结果错误但推理逻辑正确的情况给予正向反馈，有效提升模型泛化能力</li>
+              <li>引入基于隐层扰动的稳定性奖励，提升模型在音频缺失场景下的泛化与可靠推理能力</li>
             </ul>
           </article>
 
@@ -240,20 +247,32 @@
         </div>
         <div class="awards-grid">
           <article class="card award-card" data-reveal>
-            <span class="award-year">2025</span>
+            <span class="award-year">2025.08</span>
             <h3>中国大学生计算机博弈大赛六子棋组全国一等奖</h3>
           </article>
           <article class="card award-card" data-reveal>
-            <span class="award-year">2025</span>
-            <h3>睿抗机器人开发者大赛编程技能竞赛全国二等奖</h3>
+            <span class="award-year">2025.08</span>
+            <h3>睿抗机器人开发者大赛（RAICOM）编程技能竞赛全国二等奖</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">2025.07</span>
+            <h3>睿抗机器人开发者大赛（RAICOM）编程技能竞赛吉林省二等奖</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">2026.05</span>
+            <h3>第十七届蓝桥杯 C/C++ 程序设计大学 A 组吉林赛区二等奖</h3>
           </article>
           <article class="card award-card" data-reveal>
             <span class="award-year">2024 - 2025</span>
-            <h3>国家奖学金 </h3>
+            <h3>国家奖学金</h3>
           </article>
           <article class="card award-card" data-reveal>
-            <span class="award-year">2023-2024 , 2024-2025 </span>
-            <h3>吉林大学校优秀学生 </h3>
+            <span class="award-year">2023 - 2024，2024 - 2025</span>
+            <h3>吉林大学校优秀学生</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">2023 - 2024，2024 - 2025</span>
+            <h3>院优秀学生干部</h3>
           </article>
           <article class="card award-card" data-reveal>
             <span class="award-year">2023 - 2024</span>
@@ -261,7 +280,7 @@
           </article>
           <article class="card award-card" data-reveal>
             <span class="award-year">2024 - 2025</span>
-            <h3>吉林大学东荣奖学金 </h3>
+            <h3>吉林大学东荣奖学金</h3>
           </article>
         </div>
       </section>
