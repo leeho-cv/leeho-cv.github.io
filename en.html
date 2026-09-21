@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lee Ho's resume.">
+  <meta name="description" content="Lee Ho's resume: Computer Science and Technology at Jilin University, ranked 8/346 with a GPA of 3.84/4.0, provisionally admitted to the School of Software Technology at Zhejiang University.">
   <meta name=" theme-color" content="#0d1b2a">
   <title>Lee Ho | Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,7 @@
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">Jilin University · Computer Science and Technology · Class of 2023</p>
           <h1>Lee Ho</h1>
+          <p class="hero-summary">Provisionally admitted to the <strong>School of Software Technology, Zhejiang University</strong>.</p>
           <div class="hero-profile-card">
             <div class="hero-profile-grid">
               <div class="hero-profile-item">
@@ -47,7 +48,7 @@
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">College</span>
-                <strong>Computer Science and Technology</strong>
+                <strong>College of Computer Science and Technology</strong>
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">Major</span>
@@ -56,6 +57,10 @@
               <div class="hero-profile-item">
                 <span class="hero-profile-label">Cohort</span>
                 <strong>Class of 2023</strong>
+              </div>
+              <div class="hero-profile-item">
+                <span class="hero-profile-label">Political Affiliation</span>
+                <strong>Member of the Communist Party of China</strong>
               </div>
               <div class="hero-profile-item">
                 <span class="hero-profile-label">Hometown</span>
@@ -77,8 +82,8 @@
           </div>
           <div class="metric-grid">
             <article class="metric-card">
-              <strong>11 / 347</strong>
-              <span>Ranked in the top 3.1% of my major for all courses over the first five semesters.</span>
+              <strong>8 / 346</strong>
+              <span>Top 3% in my major across all courses</span>
             </article>
             <article class="metric-card">
               <strong>National Scholarship</strong>
@@ -118,8 +123,10 @@
             </div>
             <h3>College of Computer Science and Technology · Major in Computer Science and Technology</h3>
             <p class="supporting-text">
-              Ranked <strong>11 / 345</strong> in dynamic comprehensive major ranking, consistently placing near the top
-              of the major.
+              Ranked <strong>8 / 346</strong> (top 3%) in my major across all courses, with a GPA of <strong>3.84 / 4.0</strong>.
+            </p>
+            <p class="supporting-text">
+              Academic plans: provisionally admitted to the <strong>School of Software Technology, Zhejiang University</strong>.
             </p>
             <div class="course-grid">
               <span>Machine Learning 98</span>
@@ -129,6 +136,7 @@
               <span>Microcomputer Interface Lab 96.8</span>
               <span>Digital Logic Circuits 96.6</span>
               <span>Computer Networks 96.5</span>
+              <span>Network Protocol Analysis Lab 96.4</span>
               <span>Operating Systems 95.8</span>
               <span>Intro to CS 95.8</span>
               <span>Hardware Design Lab I 95.5</span>
@@ -168,9 +176,9 @@
           </div>
           <h3>Connect6 Game System Based on an Attention-Enhanced Policy-Value Residual Network (Attention-ResNet)</h3>
           <p class="supporting-text">
-            As the primary project lead, I led the development of a Connect6 game system, first advancing through
-            campus selection with Monte Carlo Tree Search (MCTS), and then upgrading the architecture for the national
-            finals into a game-decision system built on a deep residual network (ResNet).
+            As the primary project lead, I led the development of a Connect6 decision-making system based on a deep
+            residual network (ResNet), taking responsibility for the overall technical design, model architecture,
+            and experimental validation.
           </p>
           <div class="project-highlights">
             <div>
@@ -181,13 +189,13 @@
             </div>
           </div>
           <ul class="feature-list">
-            <li>The input uses multi-channel board representations, while the backbone employs a 34×128 deep residual
-              network to extract spatial features and combines spatial and coordinate attention for fine-grained
-              modeling of critical regions</li>
-            <li>The output includes both a policy head and a value head for predicting the next-move distribution and
-              the winning trend of the current board; for the special double-stone rule in Connect6, I introduced
-              legality constraints and key-move recognition modules to significantly reduce search explosion under
-              complex rules</li>
+            <li>Encoded stone placements and board states using multi-channel representations, with residual modules
+              of 32, 64, and 128 channels progressively extracting spatial features</li>
+            <li>Combined spatial and coordinate attention to model critical regions while preserving the board's
+              spatial structure, strengthening representations of local patterns, continuous threats, and higher-order
+              board features</li>
+            <li>Built a policy head and a value head to predict the next-move distribution and the likely game outcome
+              from the current board state</li>
             <li>The final model achieved 73.42% policy top-1, 91.49% policy top-5, and a value MSE of 0.221 on the
               validation set, ranked first with an 86.2% win rate in the Jilin University Connect6 ranking tournament,
               and won National First Prize in the 2025 Chinese Collegiate Computer Game Competition</li>
@@ -204,24 +212,25 @@
         <div class="timeline">
           <article class="card timeline-item" data-reveal>
             <div class="timeline-meta">
-              <span>Jan 2026 - Present</span>
+              <span>Apr 2026 - Present</span>
               <span>Research Internship at AVC Lab, Jilin University</span>
             </div>
             <h3>Emotion Recognition Research Based on Reinforcement Learning and Chain-of-Thought Optimization</h3>
             <p>
-              To address hallucinated reasoning caused by incomplete cross-modal information when the strong baseline
-              VideoAuto-R1 faces missing audio at test time in multimodal video emotion recognition, I proposed a
-              GRPO-based reinforcement-learning optimization framework.
+              To address unsupported emotion inferences made by VideoAuto-R1 when audio is missing at test time in
+              multimodal video emotion recognition, I proposed a GRPO-based reinforcement learning framework with
+              multi-granularity rewards.
             </p>
             <ul class="feature-list">
-              <li>Designed an episode-level reasoning-chain structure to explicitly segment the thinking process, and
-                trained acoustic and semantic scoring models to build a semantic reward mechanism that distinguishes and
-                rewards or penalizes visual speculation versus unsupported hallucination</li>
-              <li>Introduced perturbations and computed hidden-state stability rewards, integrating them into a
-                token-level comprehensive reward allocation strategy</li>
+              <li>Designed an episode-level reasoning chain that explicitly divides the reasoning process into stages</li>
+              <li>Developed semantic calibration rewards for hallucination detection, applying different rewards and
+                penalties to unsupported fabrication, reasonable hypotheses, and visually grounded inferences to improve
+                semantic consistency when a modality is missing</li>
               <li>Reduced over-reliance on the final target during training and provided positive feedback when the
                 final answer was wrong but the reasoning logic was correct, effectively improving model generalization
               </li>
+              <li>Introduced stability rewards based on hidden-state perturbations to improve generalization and
+                reliable reasoning when audio is missing</li>
             </ul>
           </article>
 
@@ -255,12 +264,20 @@
         </div>
         <div class="awards-grid">
           <article class="card award-card" data-reveal>
-            <span class="award-year">2025</span>
+            <span class="award-year">Aug 2025</span>
             <h3>National First Prize, Connect6 Group, Chinese Collegiate Computer Game Competition</h3>
           </article>
           <article class="card award-card" data-reveal>
-            <span class="award-year">2025</span>
+            <span class="award-year">Aug 2025</span>
             <h3>National Second Prize, Programming Skills Competition, RAICOM Robotics Developer Competition</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">Jul 2025</span>
+            <h3>Jilin Provincial Second Prize, Programming Skills Competition, RAICOM Robotics Developer Competition</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">May 2026</span>
+            <h3>Jilin Regional Second Prize, C/C++ Programming, University Group A, 17th Lanqiao Cup</h3>
           </article>
           <article class="card award-card" data-reveal>
             <span class="award-year">2024 - 2025</span>
@@ -269,6 +286,10 @@
           <article class="card award-card" data-reveal>
             <span class="award-year">2023 - 2024, 2024 - 2025</span>
             <h3>Outstanding Student of Jilin University</h3>
+          </article>
+          <article class="card award-card" data-reveal>
+            <span class="award-year">2023 - 2024, 2024 - 2025</span>
+            <h3>Outstanding Student Cadre, College Level</h3>
           </article>
           <article class="card award-card" data-reveal>
             <span class="award-year">2023 - 2024</span>
