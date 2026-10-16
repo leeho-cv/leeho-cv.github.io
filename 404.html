@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="6; url=./index.html">
-  <title>Page Not Found</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <title>页面暂未开放</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: #0d1b2a; color: #f3f6fa; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(100%, 560px); padding: 48px; border: 1px solid #34465a; border-radius: 20px; background: #15273a; }
+    .code { color: #91caff; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; }
+    h1 { margin: 16px 0; font-size: clamp(28px, 5vw, 40px); }
+    p { margin: 0; color: #c7d3df; line-height: 1.7; }
+  </style>
 </head>
-
 <body>
-  <div class="page-shell">
-    <main class="section not-found-page">
-      <article class="contact-card not-found-card is-visible">
-        <div>
-          <p class="section-kicker">404</p>
-          <h2>李皓的界面正在加载</h2>
-          <p class="supporting-text">
-            未显示内容请刷新，刷新多次未显示请检查网络是否正常。
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="./index.html">返回中文首页</a>
-          <a class="button secondary" href="./en.html">Go to English Page</a>
-        </div>
-      </article>
-    </main>
-  </div>
+  <main>
+    <div class="code">404</div>
+    <h1>页面暂未开放</h1>
+    <p>网站内容正在整理，请稍后再访问。</p>
+  </main>
 </body>
-
 </html>
