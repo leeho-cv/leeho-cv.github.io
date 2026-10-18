@@ -1,0 +1,2 @@
+# Keep private Word resumes out of the published site and Git history.
+*.docx
