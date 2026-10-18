@@ -161,7 +161,7 @@ strong { font-weight: 700; }
 .award-card h3 { margin-top: 11px; font-size: 1.07rem; line-height: 1.62; }
 .contact-section { display: block !important; margin-top: 90px; padding: 0 !important; }
 .contact-card { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 37px 43px; border: 1px solid rgba(197, 225, 225, .25); border-radius: 25px; background: radial-gradient(circle at 84% 18%, rgba(155, 228, 210, .17), transparent 27%), linear-gradient(120deg, rgba(38, 88, 112, .75), rgba(18, 46, 67, .9)); box-shadow: 0 24px 60px rgba(0, 0, 0, .18); }
-.contact-card h2 { max-width: 700px; margin: 9px 0 0; font-family: "Noto Serif SC", serif; font-size: clamp(1.55rem, 2.5vw, 2.25rem); line-height: 1.35; }
+.contact-card h2 { margin: 9px 0 0; font-family: "Noto Serif SC", serif; font-size: clamp(1.55rem, 2.5vw, 2.25rem); line-height: 1.35; }
 .contact-actions { flex-shrink: 0; }
 .contact-meta { display: none; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 30px 0 36px; color: var(--quiet); font-size: .9rem; }
