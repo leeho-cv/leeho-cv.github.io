@@ -212,10 +212,11 @@ strong { font-weight: 700; }
   .hero-role { font-size: 1.1rem; }
   .hero-role span { padding: 0 5px; }
   .hero-summary { font-size: 1rem; }
-  .hero-visual { display: flex; align-items: center; min-height: 0; padding: 17px; border-radius: 19px; }
+  .hero-visual { display: grid; grid-template-columns: 78px minmax(0, 1fr); grid-template-rows: 104px auto; align-items: center; column-gap: 16px; row-gap: 7px; min-height: 0; padding: 17px; border-radius: 19px; }
   .hero-visual::before, .hero-visual::after { display: none; }
-  .hero-visual > img { width: 78px; height: 104px; flex-shrink: 0; margin: 0 16px 0 0; border-width: 2px; border-radius: 8px; transform: none; }
-  .hero-contact { flex: 1; min-width: 0; border-top: 0; }
+  .hero-visual > img { grid-column: 1; grid-row: 1; width: 78px; height: 104px; margin: 0; border-width: 2px; border-radius: 8px; transform: none; }
+  .portrait-caption { display: block; grid-column: 1; grid-row: 2; width: 100px; margin: 0 0 0 -11px; color: var(--muted); font-size: .72rem; line-height: 1.35; text-align: center; white-space: nowrap; }
+  .hero-contact { grid-column: 2; grid-row: 1 / 3; min-width: 0; border-top: 0; }
   .hero-contact div { grid-template-columns: 70px minmax(0, 1fr); gap: 7px; padding: 7px 0; }
   .hero-contact dt, .hero-contact dd { font-size: .82rem; }
   .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
