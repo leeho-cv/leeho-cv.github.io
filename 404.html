@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>页面暂未开放</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: #0d1b2a; color: #f3f6fa; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-    main { width: min(100%, 760px); padding: clamp(36px, 5vw, 64px); border: 1px solid #34465a; border-radius: 24px; background: #15273a; }
-    .code { color: #91caff; font-size: clamp(16px, 1.5vw, 22px); font-weight: 700; letter-spacing: 0.12em; }
-    h1 { margin: 24px 0; font-size: clamp(36px, 3.8vw, 64px); }
-    p { margin: 0; color: #c7d3df; font-size: clamp(19px, 1.6vw, 25px); line-height: 1.6; }
-  </style>
+  <meta http-equiv="refresh" content="6; url=./index.html">
+  <title>Page Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-  <main>
-    <div class="code">404 · 李皓个人网站</div>
-    <h1>页面暂未开放</h1>
-    <p>页面从10月16日起暂时关闭，正在维护更新。</p>
-  </main>
+  <div class="page-shell">
+    <main class="section not-found-page">
+      <article class="contact-card not-found-card is-visible">
+        <div>
+          <p class="section-kicker">404</p>
+          <h2>李皓的界面正在加载</h2>
+          <p class="supporting-text">
+            未显示内容请刷新，刷新多次未显示请检查网络是否正常。
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="./index.html">返回中文首页</a>
+          <a class="button secondary" href="./en.html">Go to English Page</a>
+        </div>
+      </article>
+    </main>
+  </div>
 </body>
+
 </html>
