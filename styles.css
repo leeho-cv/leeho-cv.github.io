@@ -89,8 +89,6 @@ strong { font-weight: 700; }
 .status-dot { display: inline-block; width: 8px; height: 8px; margin-right: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(155, 228, 210, .12), 0 0 16px rgba(155, 228, 210, .5); vertical-align: 1px; }
 .hero h1 { margin: 22px 0 0; font-family: "Noto Serif SC", serif; font-weight: 700; font-size: clamp(4.2rem, 7.2vw, 7.1rem); line-height: 1.14; letter-spacing: -.08em; }
 .latin-name { margin-left: 20px; color: rgba(244, 243, 236, .46); font-family: "IBM Plex Sans", sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: .25em; vertical-align: middle; }
-.hero-role { max-width: 730px; margin: 22px 0 0; font-size: clamp(1.24rem, 1.85vw, 1.6rem); line-height: 1.65; font-weight: 700; }
-.hero-role span { padding: 0 10px; color: var(--warm); font-weight: 400; }
 .hero-summary { max-width: 690px; margin: 22px 0 0; color: var(--muted); font-size: 1.1rem; line-height: 1.8; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 29px; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 49px; padding: 0 24px; border: 1px solid transparent; border-radius: 100px; font-size: 1rem; font-weight: 700; transition: transform .2s, box-shadow .2s, background .2s, color .2s; }
@@ -110,7 +108,7 @@ strong { font-weight: 700; }
   background: radial-gradient(circle at 80% 11%, rgba(148, 225, 204, .23), transparent 32%), linear-gradient(155deg, rgba(46, 91, 117, .76), rgba(15, 36, 56, .87) 55%, rgba(11, 27, 43, .94));
   box-shadow: 0 30px 75px rgba(0, 0, 0, .25);
 }
-.hero-visual::before { content: "PROFILE / 2027"; position: absolute; top: 34px; left: 32px; color: var(--accent); font-size: .84rem; font-weight: 700; letter-spacing: .17em; }
+.hero-visual::before { content: "PROFILE / 6"; position: absolute; top: 34px; left: 32px; color: var(--accent); font-size: .84rem; font-weight: 700; letter-spacing: .17em; }
 .hero-visual::after { content: ""; position: absolute; z-index: -1; top: -160px; right: -150px; width: 420px; height: 420px; border: 1px solid rgba(205, 245, 231, .19); border-radius: 50%; box-shadow: 0 0 0 55px rgba(205, 245, 231, .035), 0 0 0 110px rgba(205, 245, 231, .025); animation: halo 12s ease-in-out infinite alternate; }
 .hero-visual > img { width: 52%; height: 220px; margin: 23px 2px 24px auto; object-fit: cover; object-position: center 13%; border: 5px solid rgba(246, 250, 247, .88); border-radius: 17px; box-shadow: 0 18px 32px rgba(0, 0, 0, .26); transform: rotate(3deg); transition: transform .45s; }
 .hero-visual:hover > img { transform: rotate(0deg) translateY(-5px); }
@@ -129,17 +127,18 @@ strong { font-weight: 700; }
 .section-heading { padding-top: 15px; }
 .section-heading h2 { margin: 11px 0 0; font-family: "Noto Serif SC", serif; font-size: clamp(1.7rem, 2.6vw, 2.4rem); line-height: 1.35; }
 .section-heading::after { content: ""; display: block; width: 42px; height: 3px; margin-top: 24px; border-radius: 3px; background: var(--warm); }
+#project { counter-reset: project; }
 #project .section-heading { grid-row: 1 / span 3; }
 #project .project-card { grid-column: 2; }
 #project .project-card + .project-card { margin-top: 16px; }
 .card { position: relative; min-width: 0; padding: 27px 30px 30px; border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(165deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .035)); box-shadow: 0 16px 45px rgba(0, 0, 0, .1); transition: transform .28s, border-color .28s, box-shadow .28s; }
 .card:hover { transform: translateY(-4px); border-color: rgba(155, 228, 210, .36); box-shadow: 0 22px 50px rgba(0, 0, 0, .18); }
-.project-card:first-of-type { background: radial-gradient(circle at 100% 0%, rgba(75, 157, 145, .16), transparent 45%), linear-gradient(150deg, rgba(255, 255, 255, .105), rgba(255, 255, 255, .04)); }
-.project-card:first-of-type::before { content: "01"; position: absolute; right: 28px; bottom: 15px; color: rgba(166, 221, 210, .08); font-size: 6rem; font-weight: 700; line-height: 1; pointer-events: none; }
+.project-card { counter-increment: project; background: radial-gradient(circle at 100% 0%, rgba(75, 157, 145, .16), transparent 45%), linear-gradient(150deg, rgba(255, 255, 255, .105), rgba(255, 255, 255, .04)); }
+.project-card::before { content: counter(project, decimal-leading-zero); position: absolute; right: 28px; bottom: 15px; color: rgba(166, 221, 210, .08); font-size: 6rem; font-weight: 700; line-height: 1; pointer-events: none; }
 .card-topline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 7px 18px; margin-bottom: 15px; color: var(--accent); font-size: .9rem; font-weight: 700; letter-spacing: .03em; }
 .card-topline span + span { color: var(--quiet); font-weight: 500; }
 .card h3 { position: relative; margin: 0 0 13px; font-size: 1.28rem; line-height: 1.48; }
-.project-card:first-of-type h3 { font-size: 1.55rem; }
+.project-card h3 { font-size: 1.55rem; }
 .supporting-text, .feature-list { position: relative; color: var(--muted); font-size: 1.03rem; line-height: 1.78; }
 .supporting-text { margin: 9px 0; }
 .supporting-text strong, .feature-list strong { color: var(--text); }
@@ -209,8 +208,6 @@ strong { font-weight: 700; }
   .hero { display: flex; flex-direction: column; align-items: stretch; gap: 26px; padding-top: 48px; padding-bottom: 28px; }
   .hero h1 { font-size: 3.8rem; }
   .latin-name { margin-left: 8px; font-size: .72rem; }
-  .hero-role { font-size: 1.1rem; }
-  .hero-role span { padding: 0 5px; }
   .hero-summary { font-size: 1rem; }
   .hero-visual { display: grid; grid-template-columns: 78px minmax(0, 1fr); grid-template-rows: 104px auto; align-items: center; column-gap: 16px; row-gap: 7px; min-height: 0; padding: 17px; border-radius: 19px; }
   .hero-visual::before, .hero-visual::after { display: none; }
@@ -229,7 +226,7 @@ strong { font-weight: 700; }
   .section-heading::after { margin-top: 13px; }
   #project .project-card:nth-of-type(n) { margin: 0 0 13px; }
   .card { padding: 21px 20px; border-radius: 17px; }
-  .card h3, .project-card:first-of-type h3 { font-size: 1.2rem; }
+  .card h3, .project-card h3 { font-size: 1.2rem; }
   .supporting-text, .feature-list { font-size: .96rem; }
   .education-grid, #awards .awards-grid { display: block; }
   .education-card { margin-bottom: 12px; }
